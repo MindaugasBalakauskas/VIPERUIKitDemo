@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="VIPERUIKitDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9eh-WH-Ar8">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="HwT-ZI-QL2"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="J1g-P9-DFY"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9eh-WH-Ar8" secondAttribute="trailing" id="JUx-Yl-RcT"/>
+                            <constraint firstItem="9eh-WH-Ar8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KcL-5S-J1U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9eh-WH-Ar8" secondAttribute="bottom" id="MZc-sn-C54"/>
+                            <constraint firstItem="9eh-WH-Ar8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UeJ-wS-ZDA"/>
+                            <constraint firstItem="9eh-WH-Ar8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZUP-JV-fVw"/>
+                            <constraint firstItem="9eh-WH-Ar8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lXg-Zs-XOb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="9eh-WH-Ar8" id="lVT-EO-pgY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14" y="4"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="1b7-Hg-fGm">
+            <objects>
+                <viewController storyboardIdentifier="DetailsViewController" id="eJO-Hp-puU" customClass="DetailsViewController" customModule="VIPERUIKitDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B8W-VU-lb9">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1E-Rz-VDz">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GFp-Sd-W0V"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="l1E-Rz-VDz" firstAttribute="leading" secondItem="GFp-Sd-W0V" secondAttribute="leading" id="9vM-4F-Nr4"/>
+                            <constraint firstItem="GFp-Sd-W0V" firstAttribute="bottom" secondItem="l1E-Rz-VDz" secondAttribute="bottom" id="QnA-IY-FTr"/>
+                            <constraint firstItem="l1E-Rz-VDz" firstAttribute="top" secondItem="GFp-Sd-W0V" secondAttribute="top" id="hXW-l1-iUj"/>
+                            <constraint firstItem="GFp-Sd-W0V" firstAttribute="trailing" secondItem="l1E-Rz-VDz" secondAttribute="trailing" id="vF1-nn-TdC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelData" destination="l1E-Rz-VDz" id="URM-x2-6Uh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eAi-WT-OOi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="772" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
