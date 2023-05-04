@@ -1,7 +1,7 @@
 # VIPERUIKitDemo
 
 Demonstrates VIPER Architectural pattern in UIKit
-This simple app populates a dummy product list 
+This simple app populates a dummy product list. 
 API: "https://fruityvice.com/api/fruit/all"
 
 ## Requirements
